@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Discount</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="mt-8">
+        <h1 class="text-5xl text-center font-bold text-yellow-800">Excited To Get Discount</h1>
+    </header>
+    <main>
+        <section class="mt-8 mx-auto bg-gray-600 w-8/12 rounded-lg pt-10 pb-2">
+            <div class="mx-auto flex justify-center gap-4">
+                <div class="font-medium bg-yellow-800 w-5/12 text-white p-6 text-center rounded-lg">
+                    <h1 class="text-2xl">Product Price</h1>
+                    <h1 id="product-price" class="text-2xl mt-2"><span class="text-3xl">1000</span>Tk</h1>
+                    <button id="discount-btn" class="mt-8 bg-indigo-600 hover:bg-violet-600 px-6 py-2 text-xl rounded-md">Get Discount</button>
+                </div>
+                <div class="font-medium bg-yellow-800 w-5/12 text-white p-6 text-center rounded-lg">
+                    <h1 class="text-2xl">Payable Amount</h1>
+                    <h1 class="text-2xl mt-2"><span id="payable-total" class="text-3xl">1000</span>Tk</h1>
+                    <input id="dom-coupon" class="mt-8 bg-violet-800 px-4 py-2 w-10/12 border-2 rounded-md" type="text" placeholder="type 'DOM' to get 30% discount">
+                </div>
+            </div>
+            <div class="flex justify-center text-white my-4">
+                <button id="paynow-btn" class="bg-indigo-600 hover:bg-violet-600 px-6 py-2 text-xl rounded-md">Pay Now</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
